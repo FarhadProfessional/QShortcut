@@ -2,6 +2,7 @@
 #define MAINAPP_H
 
 #include <QMainWindow>
+#include <QShortcut>
 
 namespace Ui {
 class MainApp;
@@ -14,6 +15,8 @@ class MainApp : public QMainWindow
 public:
     explicit MainApp(QWidget *parent = 0);
     ~MainApp();
+
+    void activeShortcut();
 
 private:
     Ui::MainApp *ui;
